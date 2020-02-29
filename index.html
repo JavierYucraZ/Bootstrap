@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primera pagina en Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<ul class="nav justify-content-sm-center justify-content-md-end justify-content-lg-start bg-secondary">
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="#">Active</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="#">Link</a>
+	  </li>
+	  <li class="nav-item dropdown">
+	  	<a href="" class="nav-link dropdown-toggle text-white" data-toggle="dropdown" role="button">Desplegar</a>
+	  	<div class="dropdown-menu">
+	  		<a href="" class="dropdown-item">Item 1</a>
+	  		<a href="" class="dropdown-item">Item 2</a>
+	  		<a href="" class="dropdown-item">Item 3</a>
+	  	</div>
+	  </li>
+	</ul>
+
+	<h1>Estructuras y contenedores</h1>
+
+
+	<section class="container">
+		<h1>Contenedor</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officia iste ipsam, nemo quod accusantium magnam voluptas tempore eum laboriosam quasi sunt id, temporibus laborum dicta quidem alias illum beatae!</p>
+	</section>
+
+	<section class="container-fluid">
+		<h1>Contenedor Pantalla completa</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas ex mollitia amet, repellat! Sit nemo in architecto dolore. Fugiat dolorum, nesciunt est deleniti molestiae obcaecati consequuntur debitis rerum nam.</p>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-2 border bg-info">
+				<h1>col1</h1>
+			</div>
+			<div class="col-2 border bg-success">
+				<h1>col2</h1>
+			</div>
+			<div class="col-2 border bg-primary">
+				<h1>col3</h1>
+			</div>
+			<div class="col-2 border bg-secondary">
+				<h1>col4</h1>
+			</div>
+			<div class="col-2 border bg-warning">
+				<h1>col5</h1>
+			</div>
+			<div class="col-2 border bg-danger">
+				<h1>col6</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Celulares</h3>
+				<p>sm = small, su tamaño es 576px en adelante</p>
+			</div>
+			<div class="col-md-6">
+				<h3>Tablets</h3>
+				<p>md = medium devices, su tamaño es 768px en adelante</p>
+			</div>
+			<div class="col-lg-4">
+				<h3>Laptops</h3>
+				<p>lg = large devices, su tamaño es 992px en adelante</p>
+			</div>
+			<div class="col-xl-2">
+				<h3>Pc de escritorio</h3>
+				<p>xl = extra large devices, su tamaño va desde 1200px</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-8">
+				<h2>Principal</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quibusdam voluptatum saepe commodi nulla quaerat aliquam optio quia dignissimos veritatis corporis esse, impedit, velit recusandae repudiandae quasi molestias. Fugiat, tenetur.</p>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h2>SideBar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, earum. Officiis, non voluptate. Odit aut enim aperiam, perspiciatis eligendi incidunt ipsum error saepe adipisci repellat nihil, corporis, obcaecati fugit voluptate.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Celular</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-primary">
+					<td>Jsvier</td>
+					<td>Yucra</td>
+					<td>70190260</td>
+				</tr>
+				<tr class="table-info">
+					<td>Jsvier</td>
+					<td>Yucra</td>
+					<td>70190260</td>
+				</tr>
+				<tr class="table-danger">
+					<td>Jsvier</td>
+					<td>Yucra</td>
+					<td>70190260</td>
+				</tr>
+				<tr class="table-warning">
+					<td>Jsvier</td>
+					<td>Yucra</td>
+					<td>70190260</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h1>Tipos de alineacion vertical</h1>
+	<div class="container">
+		<div class="row bg-secondary mb-3 align-items-start" style="height: 100px;">
+			<div class="col-12 bg-success border" style="height: 50px;">
+				<p class="lead">Alineacion respecto al border superior</p>
+			</div>
+		</div>
+
+		<div class="row bg-secondary mb-3 align-items-center" style="height: 100px;">
+			<div class="col-12 bg-success border" style="height: 50px;">
+				<p class="lead">Alineacion al centro</p>
+			</div>
+		</div>
+
+		<div class="row bg-secondary mb-3 align-items-end" style="height: 100px;">
+			<div class="col-12 bg-success border" style="height: 50px;">
+				<p class="lead">Alineacion respecto al border inferior</p>
+			</div>
+		</div>
+	</div>
+
+	<h1>Tipos de alineacion en Horizontal</h1>
+	<div class="container mt-5">
+		<div class="row bg-secondary mb-3 justify-content-start">
+			<div class="col-3 bg-success border">
+				<p class="lead text-right">Alineacion al inicio</p>
+			</div>
+		</div>
+
+		<div class="row bg-secondary mb-3 justify-content-center">
+			<div class="col-3 bg-success border">
+				<p class="lead text-center">Alineacion al centro</p>
+			</div>
+		</div>
+
+		<div class="row bg-secondary mb-3 justify-content-end">
+			<div class="col-3 bg-success border">
+				<p class="lead text-left">Alineacion al final</p>
+			</div>
+		</div>
+
+		<div class="row bg-secondary mb-3 justify-content-around">
+			
+			<div class="col-3 bg-success border">
+				<p class="lead">Espacio al rededor</p>
+			</div>
+
+			<div class="col-3 bg-success border">
+				<p class="lead">Espacio al rededor</p>
+			</div>
+
+		</div>
+
+		<div class="row bg-secondary mb-3 justify-content-between">
+			
+			<div class="col-3 bg-success border">
+				<p class="lead">Espacio en medio</p>
+			</div>
+
+			<div class="col-3 bg-success border">
+				<p class="lead">Espacio en medio</p>
+			</div>
+			
+		</div>
+	</div>
+<!-- 
+Orden de las columnas, va desde el 1 al 12
+por defecto todas las columnas vienen con un orden de 0 -->
+	<h1>Orden de las columnas</h1>
+	<div class="container">
+		<div class="row m-3">
+			<div class="col-4 bg-info border order-3">
+				<p class="lead">Columna 1</p>
+			</div>
+
+			<div class="col-4 bg-info border order-1">
+				<p class="lead">Columna 2</p>
+			</div>
+
+			<div class="col-4 bg-info border order-2">
+				<p class="lead">Columna 3</p>
+			</div>
+		</div>
+	</div>
+
+	<h1>Desplazamiento de columnas</h1>
+	<div class="container">
+		<div class="row bg-secondary">
+			<div class="col-3 bg-success border offset-1">
+				<p class="lead">Columna 1</p>
+			</div>
+			<div class="col-3 bg-success border offset-2">
+				<p class="lead">Columna 2</p>
+			</div>
+		</div>
+	</div>
+
+
+	<h1>Tipografias y utilidades de bootstrap</h1>
+
+	<div class="container">
+		<h1>Encabezado 1</h1>
+		<h2>Encabezado 2</h2>
+		<h3>Encabezado 3</h3>
+		<h4>Encabezado 4</h4>
+		<h5>Encabezado 5</h5>
+		<h6>Encabezado 6</h6>
+
+		<p class="h1">Parrafo con encabezado 1</p>
+		<p class="h2">Parrafo con encabezado 2</p>
+		<p class="h3">Parrafo con encabezado 3</p>
+		<p class="h4">Parrafo con encabezado 4</p>
+		<p class="h5">Parrafo con encabezado 5</p>
+		<p class="h6">Parrafo con encabezado 6</p>
+
+		<p class="display-1">Titular 1</p>
+		<p class="display-2">Titular 2</p>
+		<p class="display-3">Titular 3</p>
+		<p class="display-4">Titular 4</p>
+	</div>
+	
+	<h1>Border</h1>
+	<div class="container">
+		<div class="row">
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-primary"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-secondary"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-success"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-danger"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-warning"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded border-info"></span>
+		</div>
+
+		<div class="row">
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded-top border-primary"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded-bottom border-secondary"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded-left border-success"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded-right border-danger"></span>
+		</div>
+
+		<div class="row">
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 border-primary rounded-circle"></span>
+			<span style="width: 50px; height: 50px;" class="border mr-2 mb-3 rounded-bottom border-secondary rounded-0"></span>
+		</div>
+	</div>
+
+	<h1>Imagenes</h1>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<img src="imagenes/fondo.jpg" class="img-fluid" alt="">
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<img src="imagenes/fondo.jpg" class="img-thumbnail" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h1>Sombras</h1>
+		<div class="shadow-sm p-3 mb-5 rounded">
+			Sombra pequeña
+		</div>
+		<div class="shadow-lg p-3 mb-5 rounded">
+			Sombra grande
+		</div>
+		<div class="shadow p-3 mb-5 rounded">
+			Sombra por defecto
+		</div>
+		<div class="shadow-none p-3 mb-5 rounded">
+			Elemento sin sombra
+		</div>
+	</div>
+	
+
+	<div class="container">
+		<h1>Alertas</h1>
+		<div class="alert alert-primary">
+			Alerta primaria
+		</div>
+
+		<div class="alert alert-danger">
+			Alerta primaria
+		</div>
+
+		<div class="alert alert-secondary">
+			Alerta primaria
+		</div>
+
+		<div class="alert alert-success">
+			Alerta primaria
+		</div>
+
+		<div class="alert alert-warning">
+			Alerta primaria
+		</div>
+
+		<div class="alert alert-info">
+			Si quieres recibir notificaciones,
+			<a href="" class="alert-link">click en este enlace </a>,
+			estaras al dia con nuestras noticias
+		</div>
+
+		<div class="alert alert-primary">
+			<h4 class="alert-heading">Alerta con encabezado</h4>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sed et a sequi velit labore!</p>
+			<hr>
+		</div>
+
+		<div class="alert alert-warning alert-dismissible show fade" role="alert">
+			<strong>Alert que cierra con javascript</strong>
+			<button type="button" class="close" data-dismiss="alert">
+				<span>&times;</span>
+			</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Botones</h1>
+		<div class="row">
+			<button class="btn btn-primary mr-2">Boton primario</button>
+			<button class="btn btn-secondary mr-2">Boton secundario</button>
+			<button class="btn btn-info mr-2">Boton informacion</button>
+			<button class="btn btn-danger mr-2">Boton peligro</button>
+		</div>
+
+		<div class="row mt-3">
+			<button class="btn btn-outline-primary mr-2">Boton primario</button>
+			<button class="btn btn-outline-secondary mr-2">Boton secundario</button>
+			<button class="btn btn-outline-info mr-2">Boton informacion</button>
+			<button class="btn btn-outline-danger mr-2">Boton peligro</button>
+		</div>
+
+		<div class="row mt-3">
+			<button class="btn btn-info mr-5 btn-lg">Contenido</button>
+			<button class="btn btn-info mr-5 btn-sm">Contenido</button>
+		</div>
+
+		<div class="row mt-3">
+			<button class="btn btn-success btn-block">Boton de bloque</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Insignias</h1>
+		<div class="row">
+			<div class="col-12">
+				<h1>Hola, soy una <span class="badge badge-success">Insignia</span> </h1>
+
+				<button type="button" class="btn btn-primary">
+					Mensajes <span class="badge badge-dark">+5</span>
+				</button>
+
+				<h5>Hola, soy una <span class="badge badge-pill badge-warning">Insignia</span></h5>
+
+				<a href="" class="badge badge-danger">Ver errores</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Listas</h1>
+		<div class="row">
+			<div class="col-6">
+				<ul class="list-group">
+					<li class="list-group-item">Item 1</li>
+					<li class="list-group-item">Item 2</li>
+					<li class="list-group-item">Item 3</li>
+				</ul>
+			</div>
+
+			<div class="col-6">
+				<ul class="list-group">
+					<a href="" class="list-group-item list-group-item-action active">Enlace 1</a>
+					<a href="" class="list-group-item list-group-item-action">Enlace 2</a>
+					<a href="" class="list-group-item list-group-item-action">Enlace 3</a>
+				</ul>
+			</div>
+
+			<div class="col-6 mt-5">
+				<div class="list-group list-group-horizontal-lg">
+					<li class="list-group-item">Item 1</li>
+					<li class="list-group-item">Item 2</li>
+					<li class="list-group-item">Item 3</li>
+				</div>
+			</div>
+
+			<div class="col-6 mt-5">
+				<div class="list-group">
+					<li class="list-group-item">
+						Mensajes <span class="badge badge-pill badge-primary">+10</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Invitaciones Pendientes
+						<a href=""><span class="badge badge-success badge-pill">+5</span></a>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Errores
+						<a href=""><span class="badge badge-pill badge-danger">3</span></a>
+					</li>
+				</div>
+			</div>
+
+			<div class="col-12 mt-5">
+				<div class="list-group">
+					<a href="" class="list-group-item list-group-item-action">Elemento 1</a>
+					<a href="" class="list-group-item list-group-item-action list-group-item-primary">Elemento 2</a>
+					<a href="" class="list-group-item list-group-item-action list-group-item-success">Elemento 3</a>
+					<a href="" class="list-group-item list-group-item-action list-group-item-danger">Elemento 4</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Barras de progreso</h1>
+		<div class="row">
+			<div class="col-12 mt-4">
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" style="width: 25%;">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mt-4">
+				<div class="progress">
+					<div class="progress-bar w-50" role="progressbar">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mt-4">
+				<div class="progress-bar w-75" role="progressbar">
+					75%
+				</div>
+			</div>
+
+			<div class="col-12 mt-4">
+				<div class="progress-bar w-100 bg-success progress-bar-striped" role="progressbar">
+					100%
+				</div>
+			</div>
+
+			<div class="col-12 mt-4">
+				<div class="progress-bar w-100 bg-success progress-bar-striped progress-bar-animated" role="progressbar">
+					100%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Paginacion</h1>
+		<div class="row">
+			<div class="col-6">
+				<ul class="pagination">
+					<li class="page-item"><a href="" class="page-link">Anterior</a></li>
+					<li class="page-item"><a href="" class="page-link">1</a></li>
+					<li class="page-item"><a href="" class="page-link">2</a></li>
+					<li class="page-item"><a href="" class="page-link">3</a></li>
+					<li class="page-item"><a href="" class="page-link">Siguiente</a></li>
+				</ul>
+			</div>
+
+			<div class="col-6">
+				<ul class="pagination">
+					<li class="page-item"><a href="" class="page-link"><span>&laquo;</span></a></li>
+					<li class="page-item"><a href="" class="page-link">1</a></li>
+					<li class="page-item"><a href="" class="page-link">2</a></li>
+					<li class="page-item"><a href="" class="page-link">3</a></li>
+					<li class="page-item"><a href="" class="page-link"><span>&raquo;</span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-6">
+				<ul class="pagination pagination-lg">
+					<li class="page-item"><a href="" class="page-link"><span>&laquo;</span></a></li>
+					<li class="page-item"><a href="" class="page-link">1</a></li>
+					<li class="page-item"><a href="" class="page-link">2</a></li>
+					<li class="page-item"><a href="" class="page-link">3</a></li>
+					<li class="page-item"><a href="" class="page-link"><span>&raquo;</span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-6">
+				<ul class="pagination pagination-sm">
+					<li class="page-item"><a href="" class="page-link"><span>&laquo;</span></a></li>
+					<li class="page-item"><a href="" class="page-link">1</a></li>
+					<li class="page-item"><a href="" class="page-link">2</a></li>
+					<li class="page-item"><a href="" class="page-link">3</a></li>
+					<li class="page-item"><a href="" class="page-link"><span>&raquo;</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Cards/Tarjetas</h1>
+		<div class="row">
+			<div class="col-4">
+				<div class="card">
+					<img src="imagenes/fondo.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Titulo</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quae aliquid ut laudantium, fugit similique.</p>
+						<a href="" class="btn btn-info">Enviar</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card">
+					<h5 class="card-header  text-center">Cabecera de la tarjeta</h5>
+					<img src="imagenes/fondo.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Titulo</h3>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque recusandae repudiandae eius est modi blanditiis debitis
+						</p>
+						<a href="" class="btn btn-dark">Enviar</a>
+					</div>
+					<div class="card-footer text-muted">
+						Creado hace 2 dias
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card">
+					<img src="imagenes/fondo.jpg" alt="" class="card-img">
+					<div class="card-img-overlay">
+						<h1 class="card-title">Titulo</h1>
+						<p class="card-text text-white">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, cupiditate, reiciendis. Laboriosam eos quibusdam, delectus.
+						</p>
+						<button class="btn btn-success">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card mt-5">
+				<div class="row no-gutters">
+					<div class="col-4">
+						<img src="imagenes/fondo.jpg" class="card-img" alt="">
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h3 class="card-title">Titulo</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi obcaecati sed nostrum eveniet dolore distinctio! Assumenda dolores, et beatae. Cum, libero, cupiditate? Numquam vel nam, quidem excepturi enim tempore totam.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-4 mt-3">
+				<div class="card text-white bg-primary">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 mt-3">
+				<div class="card text-white bg-success">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 mt-3">
+				<div class="card text-white bg-warning">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 mt-3">
+				<div class="card border-primary">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 mt-3">
+				<div class="card border-success">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 mt-3">
+				<div class="card border-warning">
+					<div class="card-header">
+						Encabezado
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							Color Primario
+						</div>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quia?
+						</p>
+						<button class="btn btn-secondary">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container jumbotron mt-5">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="display-4">Hola mundo!</h1>
+				<p class="lead">
+					La clase Jumbotron se usa para captar la atencion del usuario <br>
+					Nos permite crear una pantalla gigante que resalte el contenido
+				</p>
+				<hr class="my-4">
+				<p>
+					Lo podemos usar junto con otros componentes de bootstrap para espaciar
+					el contenido en un contenedor	
+				</p>
+				<a href="" class="btn btn-info">Saber mas..</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h1>Slider Carousel</h1>
+		<div class="row">
+			<div class="col-12">
+				<div class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mt-5">
+				<div class="carousel slide" data-ride="carousel" id="slider">
+					<ol class="carousel-indicators">
+						<li data-target="#slider" data-slide-to="0" class="active"></li>
+						<li data-target="#slider" data-slide-to="1"></li>
+						<li data-target="#slider" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+						</div>
+					</div>
+					<a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-12 mt-5">
+				<div class="carousel slide" data-ride="carousel" id="slider2">
+					<ol class="carousel-indicators">
+						<li data-target="#slider2" data-slide-to="0" class="active"></li>
+						<li data-target="#slider2" data-slide-to="1"></li>
+						<li data-target="#slider2" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-secondary">
+								<h3>Primer Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-success">
+								<h3>Segundo Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-primary">
+								<h3>Tercer Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+					</div>
+					<a href="#slider2" class="carousel-control-next" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a href="#slider2" class="carousel-control-prev" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="col-12 mt-5">
+				<div class="carousel slide carousel-fade" data-ride="carousel" id="slider3">
+					<ol class="carousel-indicators">
+						<li data-target="#slider3" data-slide-to="0" class="active"></li>
+						<li data-target="#slider3" data-slide-to="1"></li>
+						<li data-target="#slider3" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-secondary">
+								<h3>Primer Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-success">
+								<h3>Segundo Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="imagenes/fondo.jpg" alt="" class="img-fluid w-100" style="height: 550px;">
+							<div class="carousel-caption bg-primary">
+								<h3>Tercer Slide</h3>
+								<p class="lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea!
+								</p>
+							</div>
+						</div>
+					</div>
+					<a href="#slider3" class="carousel-control-next" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a href="#slider3" class="carousel-control-prev" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-group">
+						<input type="email" placeholder="Ingrese su Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="file" class="form-control-file">
+					</div>
+					<div class="form-group">
+						<select name="" id="" class="form-control">
+							<option value="">Html</option>
+							<option value="">Javascript</option>
+							<option value="">Bootstrap</option>
+							<option value="">PHP</option>
+							<option value="">Wordpress</option>
+							<option value="">Joomla</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<select name="" id="" class="form-control" multiple>
+							<option value="">Html</option>
+							<option value="">Javascript</option>
+							<option value="">Bootstrap</option>
+							<option value="">PHP</option>
+							<option value="">Wordpress</option>
+							<option value="">Joomla</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<select name="" id="" class="form-control form-control-lg" multiple>
+							<option value="">Html</option>
+							<option value="">Javascript</option>
+							<option value="">Bootstrap</option>
+							<option value="">PHP</option>
+							<option value="">Wordpress</option>
+							<option value="">Joomla</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<select name="" id="" class="form-control form-control-sm" multiple>
+							<option value="">Html</option>
+							<option value="">Javascript</option>
+							<option value="">Bootstrap</option>
+							<option value="">PHP</option>
+							<option value="">Wordpress</option>
+							<option value="">Joomla</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Ingrese su contraseña">
+						<small class="form-text text-muted">La contraseña debe tener 8 digitos como minimo</small>
+					</div>
+
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="check1">
+						<label for="check1" class="form-check-label">Checkbox 1</label>
+					</div>
+
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="check2">
+						<label for="check2" class="form-check-label">Checkbox 2</label>
+					</div>
+
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="check3">
+						<label for="check3" class="form-check-label">Checkbox 3</label>
+					</div>
+
+					<div class="form-check">
+						<input type="radio" class="form-check-input" id="radio1" name="radio">
+						<label for="radio1" class="form-check-label">RadioButton 1</label>
+					</div>
+ 
+					<div class="form-check">
+						<input type="radio" class="form-check-input" id="radio2" name="radio">
+						<label for="radio2" class="form-check-label">RadioButton 2</label>
+					</div>
+
+
+					<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="switch">
+						<label for="switch" class="custom-control-label">Ejemplo de switch</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="check1">
+						<label for="check1" class="form-check-label">Checkbox 1</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="check2">
+						<label for="check2" class="form-check-label">Checkbox 2</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="check3">
+						<label for="check3" class="form-check-label">Checkbox 3</label>
+					</div>
+				</form>
+
+				<form>
+					<div class="form-row form-group">
+						<div class="col-6">
+							<input type="email" placeholder="Ingrese su email" class="form-control">
+						</div>
+
+						<div class="col-6">
+							<input type="text" placeholder="Ingrese su Usuario" class="form-control">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<input type="text" placeholder="Ingrese su direccion" class="form-control">
+					</div>
+
+					<div class="form-row form-group">
+						<div class="col-4">
+							<label for="pais">Pais</label>
+							<select name="" id="pais" class="form-control">
+								<option value="">Bolivia</option>
+								<option value="">Brasil</option>
+								<option value="">Argentina</option>
+							</select>
+						</div>
+						<div class="col-6">
+							<label for="ciudad">Ciudad</label>
+							<input type="text" placeholder="Ingrese su Ciudad" id="ciudad" class="form-control">
+						</div>
+						<div class="col-2">
+							<label for="postal">Codigo Postal</label>
+							<input type="text" placeholder="Codigo Postal" id="postal" class="form-control">
+						</div>
+					</div>
+
+					<button class="btn btn-success">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Formulario con validacion</h1>
+		<div class="row">
+			<div class="col-12">
+				<form class="formularioValidacion" novalidate>
+					<div class="form-row">
+						<div class="col-4 mb-3">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre" autocomplete="off" required>
+							<div class="invalid-feedback">Debe proporcionar su nombre</div>
+							<div class="valid-feedback">Datos validos</div>
+						</div>
+
+						<div class="col-4 mb-3">
+							<label for="apellido">Apellido</label>
+							<input type="text" class="form-control" id="apellido" placeholder="Introduzca su apellido" autocomplete="off" required>
+							<div class="invalid-feedback">Debe proporcionar su apellido</div>
+							<div class="valid-feedback">Datos validos</div>
+						</div>
+
+						<div class="col-4 mb-3">
+							<label for="email">Correo Electronico</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="prefijo">
+										@
+									</span>
+								</div>
+								<input type="email" class="form-control" id="email" placeholder="Introduzca su correo electronico" autocomplete="off" required>
+								<div class="invalid-feedback">Debe proporcionar su correo</div>
+								<div class="valid-feedback">Datos validos</div>
+							</div>
+							
+						</div>
+					</div>
+					<button class="btn btn-primary" type="submit">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Modal</h1>
+		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalEjemplo">
+			Modal Simple
+		</button>
+		<div class="modal" id="modalEjemplo" role="dialog" tabindex="-1">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Titulo del modal</h4>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">Guardar</button>
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalEjemplo1">
+			Modal transicion y scroll
+		</button>
+		<div class="modal fade" id="modalEjemplo1" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Titulo del modal</h4>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p><p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">Guardar</button>
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalEjemplo2">
+			Modal Centrado
+		</button>
+		<div class="modal fade" id="modalEjemplo2" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Titulo del modal</h4>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor tempore eum doloribus, doloremque beatae nobis nisi maiores aut quibusdam veniam provident sapiente mollitia repellat rem explicabo delectus quis nemo.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">Guardar</button>
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="container">
+		<h1>PopOver</h1>
+
+		<button type="button" class="btn btn-info" data-toggle="popover" title="titulo para el popover"
+		data-content="descripcion del popover">
+			Abrir PopOver
+		</button>
+
+		<button type="button" class="btn btn-success" data-toggle="popover" 
+		data-content="contenido arriba" data-container="body" data-placement="top">
+			PopOver arriba
+		</button>
+
+		<button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom"
+		data-content="contenido abajo">
+			PopOver abajo
+		</button>
+
+		<button type="button" class="btn btn-warning" data-toggle="popover" data-placement="left"
+		data-content="contenido a la izquierda">
+			PopOver Izquierda
+		</button>
+
+		<button class="btn btn-dark" type="button" data-toggle="popover" data-container="body"
+		 data-placement="top"  data-content="Descripcion del popover" data-trigger="focus">
+			PopOver
+		</button>
+	</div>
+
+	<div class="container">
+		<h1>Toast</h1>
+		<div class="toast" role="alert" data-delay=5000>
+			<div class="toast-header">
+				<img src="imagenes/fondo.jpg" class="rounded mr-2" height="50px" width="50px">
+				<strong class="mr-auto">Imagenes</strong>
+				<small>Hace 5 minutos</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+					<span>&times;</span>
+				</button>
+			</div>
+			<div class="toast-body">
+				Hola, esto es un ejemplo de toast
+			</div>
+		</div>
+
+		<div class="toast" role="alert" data-autohide="false">
+			<div class="toast-header">
+				<img src="imagenes/fondo.jpg" class="rounded mr-2" height="50px" width="50px">
+				<strong class="mr-auto">Imagenes</strong>
+				<small>Hace 5 minutos</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+					<span>&times;</span>
+				</button>
+			</div>
+			<div class="toast-body">
+				Hola, esto es un ejemplo de toast
+			</div>
+		</div>
+	</div>
+
+
+
+
+ 
+<br><br><br>
+
+
+	
+
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+	<script>
+		(function(){
+			window.addEventListener('load', function(){
+				var forms = document.getElementsByClassName('formularioValidacion');
+				var validacion = Array.prototype.filter.call(forms, function(form){
+					form.addEventListener('submit', function(event){
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$('.toast').toast('show');
+		});
+	</script>
+</body>
+</html>
