@@ -1,0 +1,16 @@
+*{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	background: #4633af !important;
+}
+
+
+#inicio{
+	padding: 150px 0;
+	background: url(../imagenes/hero-background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
