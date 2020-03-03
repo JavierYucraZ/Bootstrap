@@ -14,3 +14,57 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+#opiniones{
+	padding: 100px 0;
+	background: #262431;
+}
+
+#Slider > .carousel-inner{
+	padding: 0 105px;
+}
+
+#caracteristicas{
+	padding: 160px 0;
+	background: #2f2c3c;
+}
+
+.seccion-titular{
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.card-icono > i{
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.nav-tabs{
+	border : none;
+}
+
+.caja-imagen{
+	padding-top: 20px;
+}
+
+.nav-tabs > .nav-link{
+	margin: 10px 0 20px;
+	padding: 10px 20px;
+	border: none;
+	border-bottom: 3px solid #f1f1f8;
+	color: #f1f1f8;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+.nav-tabs > .nav-link.active,
+.nav-tabs > .nav-link:hover{
+	border-bottom: 0.2rem solid #00c9db;
+	background-color: transparent;
+	color: #00c9db;
+	outline: none;
+}
+
+
