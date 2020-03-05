@@ -68,3 +68,32 @@
 }
 
 
+.boton-preview::before,
+.boton-preview::after{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background: #17a2b8;
+	display: block;
+	width: 80px;
+	height: 80px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.boton-preview::before{
+	animation: pulso 1500ms infinite ease-out;
+}
+
+@keyframes pulso{
+	0%{
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+
+	100%{
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
