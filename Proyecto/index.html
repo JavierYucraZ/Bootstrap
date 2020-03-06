@@ -7,11 +7,9 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-principal">
 	
-
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-principal">
 		<div class="container">
 			<a href="" class="navbar-brand font-weight-bold">Mi pagina</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal">
@@ -31,10 +29,13 @@
 					<a href="#caracteristicas" class="nav-link">Caracteristicas</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Enlace1</a>
+					<a href="#preview" class="nav-link">Preview</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Enlace2</a>
+					<a href="#detalles" class="nav-link">Detalles</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contacto" class="nav-link">Contacto</a>
 				</li>
 			</ul>
 		</div>
@@ -552,17 +553,163 @@
 	</section>
 
 
-	
+	<section id="detalles">
+		<div class="caja-detalles">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="imagenes/section-details-1.png" class="img-fluid" alt="">
+					</div>
+					<div class="col-lg-6 d-flex align-items-center">
+						<div class="card bg-transparent border-0 text-white">
+							<div class="card-body">
+								<div class="card-title">
+									<h3>Titulo</h3>
+								</div>
+								<hr>
+								<p class="card-text lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim id voluptas, maiores, amet facilis totam ducimus, autem iste error magnam ex delectus sint! Facilis nulla pariatur, deleniti ipsum! Voluptatum, veritatis!
+								</p>
+								<a href="" class="btn btn-info">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="caja-detalles">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 order-1">
+						<img src="imagenes/section-details-2.png" class="img-fluid" alt="">
+					</div>
+					<div class="col-lg-6 d-flex align-items-center">
+						<div class="card bg-transparent border-0 text-white">
+							<div class="card-body">
+								<div class="card-title">
+									<h3>Titulo</h3>
+								</div>
+								<hr>
+								<p class="card-text lead">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim id voluptas, maiores, amet facilis totam ducimus, autem iste error magnam ex delectus sint! Facilis nulla pariatur, deleniti ipsum! Voluptatum, veritatis!
+								</p>
+								<a href="" class="btn btn-info">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section id="contacto">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="seccion-titular">Contacto</h2>
+			</div>
+			<p class="lead">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nisi facilis nam, voluptas, alias laboriosam.
+			</p>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="caja-contacto d-flex h-100 w-100 justify-content-center align-items-center">
+						<ul class="list-unstyled">
+							<li>
+								<i class="fa fa-map-marker text-info pr-3"></i>
+								<span>Avenida 16 de Julio, Edificio 6 de Julio, piso 1, oficina #104</span>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.4831581595517!2d-68.13496318561475!3d-16.501687988615014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f207072c74539%3A0x1b30bafbede6338c!2sEducomser%20SRL!5e0!3m2!1ses-419!2sbo!4v1583448344611!5m2!1ses-419!2sbo" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							</li>
 
+							<li>
+								<i class="fa fa-phone text-info pr-3"></i>
+								<span>+591 70190260</span>
+							</li>
 
+							<li>
+								<i class="fa fa-envelope text-info pr-3"></i>
+								<span><a href="" class="text-white">Info@example.com</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="caja-form">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control form-contacto" id="nombre" placeholder="Ingrese su nombre" required>
+							</div>
 
+							<div class="form-group">
+								<input type="email" class="form-control form-contacto" id="email" placeholder="Ingrese su Email" required>
+							</div>
+
+							<div class="form-group">
+								<textarea name="" id="" cols="30" rows="10" class="form-control form-contacto" required></textarea>
+							</div>
+
+							<button class="btn btn-outline-info btn-lg btn-block" type="submit">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="py-5 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="caja-footer">
+						<h4 class="text-white">Social Media</h4>
+						<div class="caja-icono d-flex justify-content-around p-4">
+							<div class="footer-icono rounded-circle text-center border border-info">
+								<a href="">
+									<i class="fa fa-twitter text-info p-3"></i>
+								</a>
+							</div>
+
+							<div class="footer-icono rounded-circle text-center border border-info">
+								<a href="">
+									<i class="fa fa-facebook text-info p-3"></i>
+								</a>
+							</div>
+
+							<div class="footer-icono rounded-circle text-center border border-info">
+								<a href="">
+									<i class="fa fa-github text-info p-3"></i>
+								</a>
+							</div>
+
+							<div class="footer-icono rounded-circle text-center border border-info">
+								<a href="">
+									<i class="fa fa-instagram text-info p-3"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="caja-footer">
+						<h4 class="seccion-titular text-white">Sobre Nosotros</h4>
+						<div class="caja-nosotros p-4">
+							<p class="lead text-muted">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quaerat voluptates natus sunt esse accusantium?
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	
 </body>
 </html>
